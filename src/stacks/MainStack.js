@@ -16,6 +16,5 @@ export default () => (
         <stack.Screen name='Home' component={Home} />
         <stack.Screen name='Produtos' component={Produtos} options={{ animation: 'slide_from_right' }} />
         <stack.Screen name='TabNavigation' component={TabNavigation} />
-
     </stack.Navigator>
 )

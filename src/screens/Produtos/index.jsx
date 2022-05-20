@@ -1,45 +1,75 @@
 import React from 'react'
-import { StatusBar, Image } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { StatusBar, Image, View } from 'react-native';
+import BtnVotar from '../../Components/Voltar';
+
 
 import {
     Container,
-    AreaVoltarFoto,
-    AreaLoja
+    AreaVoltarFavoritoPerfil,
+    DesignerCirculo,
+    DesignerCirculo1,
+    DesignerCirculo2,
+    AreaVoltarFavoritar,
+    AreaPerfil,
+    Perfil,
+    AreaDadosPerfil,
+    Nome,
+    AreaCategoriaDistancia,
+    Categoria,
+    Distancia,
+    AreaTempoPreco,
+    Tempo,
+    Preco
 
 } from './style';
 
 export default () => {
 
-    const navigation = useNavigation()
 
-    const Home = () => {
-
-        navigation.navigate('TabNavigation')
-
-    }
 
 
     return (
 
         <Container>
 
-            <StatusBar backgroundColor="#fcc827" barStyle="dark-content" > </StatusBar>
+            <StatusBar backgroundColor="#F0F0F0" barStyle="dark-content" > </StatusBar>
 
-            <AreaVoltarFoto>
+            <AreaVoltarFavoritoPerfil>
 
-            
+                <View style={{ paddingLeft: 35, paddingRight: 55 }}>
+
+                    <AreaVoltarFavoritar>
+                        <BtnVotar RotaName='TabNavigation' />
+                    </AreaVoltarFavoritar>
+                    <AreaPerfil>
+
+                        <Perfil>
+                            <Image style={{ width: 78, height: 74 }} source={require('../../../assets/acai.jpg')} />
+                        </Perfil>
+
+                        <AreaDadosPerfil>
+                            <Nome>AçaíTeria</Nome>
+                            <AreaCategoriaDistancia>
+                                <Categoria>Açaí • </Categoria>
+                                <Distancia>1km</Distancia>
+                            </AreaCategoriaDistancia>
+                            <AreaTempoPreco>
+                                <Tempo>25 - 30 min • </Tempo>
+                                <Preco>R$ 3,00</Preco>
+                            </AreaTempoPreco>
+                        </AreaDadosPerfil>
+
+                    </AreaPerfil>
 
 
-            </AreaVoltarFoto>
+                </View>
 
-            <AreaLoja>
-
-
-            </AreaLoja>
-
+                <DesignerCirculo></DesignerCirculo>
+                <DesignerCirculo1></DesignerCirculo1>
+                <DesignerCirculo2></DesignerCirculo2>
 
 
+            </AreaVoltarFavoritoPerfil>
 
 
 
