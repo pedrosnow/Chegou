@@ -42,11 +42,9 @@ export default () => {
                         <BtnVotar RotaName='TabNavigation' />
                     </AreaVoltarFavoritar>
                     <AreaPerfil>
-
                         <Perfil>
                             <Image style={{ width: 78, height: 74 }} source={require('../../../assets/acai.jpg')} />
                         </Perfil>
-
                         <AreaDadosPerfil>
                             <Nome>AçaíTeria</Nome>
                             <AreaCategoriaDistancia>
@@ -58,10 +56,7 @@ export default () => {
                                 <Preco>R$ 3,00</Preco>
                             </AreaTempoPreco>
                         </AreaDadosPerfil>
-
                     </AreaPerfil>
-
-
                 </View>
 
                 <DesignerCirculo></DesignerCirculo>
