@@ -24,6 +24,7 @@ export default function App() {
       <Tab.Screen name="Home" children={TabTops} options={{
 
         headerShown: true,
+        headerShadowVisible: false,
 
         headerTitle: (props) => <Header {...props} />,
 
