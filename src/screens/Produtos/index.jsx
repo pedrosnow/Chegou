@@ -27,7 +27,6 @@ export default () => {
     return (
 
         <Container>
-            <StatusBar backgroundColor="#F0F0F0" barStyle="dark-content" > </StatusBar>
             <AreaVoltarFavoritoPerfil>
                 <View style={{ paddingLeft: 35, paddingRight: 55 }}>
                     <AreaVoltarFavoritar>

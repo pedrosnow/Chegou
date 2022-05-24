@@ -5,7 +5,6 @@ const stack = createNativeStackNavigator()
 
 import Login from '../screens/Login/index';
 import Preload from '../screens/Preload/index';
-import Home from '../screens/Home/index';
 import TabNavigation from '../stacks/TabNavigation';
 import Produtos from '../screens/Produtos/index';
 

@@ -1,10 +1,21 @@
 import React from 'react'
 import { Image } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
-import { Container, ScrollView, Card, Click, ListaLojas, AreaLoja, AreaLogoLoja, AreaInformacaoLoja, NomeLoja, AreaCategoriaDistancia, Categoria, Distancia, AreaTempoTaxaEntrega, Tempo, TaxaEntrega, AreaLogoInformacaoLoja } from './style.js';
+import { Container, ScrollView, Card, ListaLojas, AreaLoja, AreaLogoLoja, AreaInformacaoLoja, NomeLoja, AreaCategoriaDistancia, Categoria, Distancia, AreaTempoTaxaEntrega, Tempo, TaxaEntrega, AreaLogoInformacaoLoja } from './style.js';
 import { useNavigation } from '@react-navigation/native';
 
 export default () => {
+
+    var dados = [
+        {'nome': "maria"},
+        {'nome': "maria"},
+        {'nome': "maria"}
+    ]
+
+    dados.forEach(element => {
+        console.log(element.nome);
+    });
+
 
     const navigation = useNavigation()
 
@@ -19,57 +30,53 @@ export default () => {
         <Container>
 
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
+            <Card>
+                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
+            </Card>
 
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
-                <Click>
-                    <Card>
-                        <Image style={{ width: 81, height: 81 }} source={require('../../../assets/hamburg.jpg')} />
-                    </Card>
-                </Click>
 
             </ScrollView>
 
