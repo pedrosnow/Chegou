@@ -15,6 +15,8 @@ export const AreaVoltarFavoritoPerfil = styled.View`
     height: 215px;
     width:100%
     overflow:hidden;
+    borderBottomRightRadius: 20px;
+    borderBottomLeftRadius:20px;
 
 `
 
@@ -75,7 +77,7 @@ export const DesignerCirculo = styled.View`
     height: 260px;
     left: 180px;
     top: -56px;
-    background: #E7E7E7;
+    background: #EBEBEB;
     border-radius:200px;
 `;
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Image, StatusBar, RefreshControl } from 'react-native';
-import Restaurante from '../Restaurante/index';
+import { Image, StatusBar, RefreshControl, TouchableOpacity, Text } from 'react-native';
 
 
 import {
@@ -15,22 +14,13 @@ import {
     AreaHeader
 } from './style';
 
-const wait = (timeout) => {
-    return new Promise(resolve => setTimeout(resolve, timeout));
-}
 
 
 export default () => {
 
-    const [refreshing, setRefreshing] = React.useState(false);
-
-    const onRefresh = React.useCallback(() => {
-        setRefreshing(true);
-        wait(2000).then(() => setRefreshing(false));
-    }, []);
 
     return (
-        <Container refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}>
+        <Container >
 
             <StatusBar backgroundColor="#fff" barStyle="dark-content" > </StatusBar>
 
@@ -46,23 +36,14 @@ export default () => {
 
                 </Header>
 
-                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-
-                    <NomeCategoria style={{ color: "red" }} >Restaurante</NomeCategoria>
-                    <NomeCategoria>Mercado</NomeCategoria>
-                    <NomeCategoria>Bebidas</NomeCategoria>
-                    <NomeCategoria>Farmacia</NomeCategoria>
-
-                </ScrollView>
-
+                
 
 
             </AreaHeader>
 
-
-            <Restaurante />
-
-
+            
+          
+          
         </Container>
 
     )

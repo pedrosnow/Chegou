@@ -8,19 +8,20 @@ import { Entypo } from '@expo/vector-icons';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+
 import Home from '../screens/Home/index';
 import Buscar from '../screens/Buscar/index';
 import Pedidos from '../screens/Meus Pedidos/index';
 import Menu from '../screens/Menu/index';
-
+import TabTop from './TopTabs';
 
 const Tab = createBottomTabNavigator();
 
-export default function App() {
+export default () => {
   return (
 
     <Tab.Navigator screenOptions={{ headerShown: false, tabBarShowLabel: false }} >
-      <Tab.Screen name="Home" component={Home} options={{
+      <Tab.Screen name="Home" children={TabTop} options={{
 
         tabBarIcon: ({ focused }) => (
 
