@@ -1,20 +1,18 @@
 import React from 'react'
 import { Image } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
+
 import { Container, ScrollView, Card, ListaLojas, AreaLoja, AreaLogoLoja, AreaInformacaoLoja, NomeLoja, AreaCategoriaDistancia, Categoria, Distancia, AreaTempoTaxaEntrega, Tempo, TaxaEntrega, AreaLogoInformacaoLoja } from './style.js';
+
+
 import { useNavigation } from '@react-navigation/native';
+
 
 export default () => {
 
-    var dados = [
-        {'nome': "maria"},
-        {'nome': "maria"},
-        {'nome': "maria"}
-    ]
 
-    dados.forEach(element => {
-        console.log(element.nome);
-    });
+
+
 
 
     const navigation = useNavigation()
@@ -29,56 +27,28 @@ export default () => {
     return (
         <Container>
 
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-                
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
-            <Card>
-                <Image style={{ width: 70, height: 70 }} source={require('../../../assets/hamburg.jpg')} />
-            </Card>
+            {/* <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 
+                <Card>
+                    <Image style={{ width: 80, height: 80 }} source={require('../../../assets/acai.jpg')} />
+                </Card>
+                <Card>
+                    <Image style={{ width: 80, height: 80 }} source={require('../../../assets/acai.jpg')} />
+                </Card>
+                <Card>
+                    <Image style={{ width: 80, height: 80 }} source={require('../../../assets/acai.jpg')} />
+                </Card>
+                <Card>
+                    <Image style={{ width: 80, height: 80 }} source={require('../../../assets/acai.jpg')} />
+                </Card>
+                <Card>
+                    <Image style={{ width: 80, height: 80 }} source={require('../../../assets/acai.jpg')} />
+                </Card>
+                <Card>
+                    <Image style={{ width: 80, height: 80 }} source={require('../../../assets/acai.jpg')} />
+                </Card>
 
-            </ScrollView>
+            </ScrollView> */}
 
             <ListaLojas>
 
@@ -209,6 +179,6 @@ export default () => {
             </ListaLojas>
 
 
-        </Container>
+        </Container >
     )
 }

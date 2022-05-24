@@ -1,7 +1,7 @@
 import React from 'react'
-import { StatusBar, Image, View } from 'react-native';
+import { Image, View, Text } from 'react-native';
 import BtnVotar from '../../Components/Voltar';
-
+import OpcaoCategoria from '../../Components/OpcaoCategoria';
 
 import {
     Container,
@@ -19,7 +19,8 @@ import {
     Distancia,
     AreaTempoPreco,
     Tempo,
-    Preco
+    Preco,
+    ScrollCategoria,
 } from './style';
 
 export default () => {
@@ -49,12 +50,22 @@ export default () => {
                         </AreaDadosPerfil>
                     </AreaPerfil>
                 </View>
-                <DesignerCirculo></DesignerCirculo>
+
+                <DesignerCirculo ></DesignerCirculo>
                 <DesignerCirculo1></DesignerCirculo1>
                 <DesignerCirculo2></DesignerCirculo2>
 
 
             </AreaVoltarFavoritoPerfil>
+
+            <ScrollCategoria horizontal={true} showsHorizontalScrollIndicator={false} >
+
+                <OpcaoCategoria name={'Açaí'} select={"true"} />
+                <OpcaoCategoria name={'Sorvetes'} />
+                <OpcaoCategoria name={'Bebibas'} />
+
+
+            </ScrollCategoria>
 
 
 

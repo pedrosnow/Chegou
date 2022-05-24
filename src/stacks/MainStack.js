@@ -10,10 +10,12 @@ import Produtos from '../screens/Produtos/index';
 
 
 export default () => (
+
     <stack.Navigator initialRouteName='TabNavigation' screenOptions={{ headerShown: false, presentation: 'modal' }}>
         <stack.Screen name='Preload' component={Preload} />
         <stack.Screen name='Login' component={Login} />
         <stack.Screen name='Produtos' component={Produtos} options={{ animation: 'slide_from_right' }} />
         <stack.Screen name='TabNavigation' component={TabNavigation} />
     </stack.Navigator>
+
 )

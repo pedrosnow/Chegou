@@ -1,18 +1,20 @@
 import styled from 'styled-components/native';
 
+export const Card = styled.View`
+    width:80px;
+    height:80px;
+    border:1px solid red;
+    border-radius: 10px;
+    margin-right:10px;
+    overflow:hidden;
+`;
+
 export const Container = styled.ScrollView`
     background:#fff;
     padding: 13px;
 
 `;
 
-export const Card = styled.View`
-    width:70px;
-    height:70px;
-    border-radius: 10px;
-    margin-right:10px;
-    overflow:hidden;
-`;
 
 export const ListaLojas = styled.View`
     width: 100%;

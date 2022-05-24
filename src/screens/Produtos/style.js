@@ -12,7 +12,8 @@ export const Container = styled.ScrollView`
 
 export const AreaVoltarFavoritoPerfil = styled.View`
     background: #F0F0F0;
-    height: 215px;
+    padding-top:35px
+    height: 260px;
     width:100%
     overflow:hidden;
     borderBottomRightRadius: 20px;
@@ -28,7 +29,7 @@ export const AreaVoltarFavoritar = styled.View`
 
 export const AreaPerfil = styled.View`
     overflow:hidden;
-    z-index: 1;
+    z-index: 3;
     justify-content:flex-start;
     align-items:center;
     flex-direction:row;
@@ -47,6 +48,7 @@ export const AreaDadosPerfil = styled.View`
     width:100%;
     margin-left:10px
     margin-bottom: 10px;
+    z-index:3;
 
 `
 export const Nome = styled.Text`
@@ -75,10 +77,11 @@ export const DesignerCirculo = styled.View`
     position: absolute;
     width: 260px;
     height: 260px;
-    left: 180px;
-    top: -56px;
+    left: 210px;
+    top: -75px;
     background: #EBEBEB;
     border-radius:200px;
+    z-index: 1;
 `;
 
 export const DesignerCirculo1 = styled.View`
@@ -86,20 +89,37 @@ export const DesignerCirculo1 = styled.View`
     position: absolute;
     width: 192px;
     height: 192px;
-    left: 231px;
-    top: -36px;
+    left: 260px;
+    top: -55px;
     border-radius:100px;
     background: #F0F0F0;
-
+    z-index: 1;
 `
 
 export const DesignerCirculo2 = styled.View`
     position: absolute;
     width: 147px;
     height: 147px;
-    left: 258px;
-    top: -21px;
+    left: 290px;
+    top: -35px;
+    z-index: 1;
     border-radius:100px;
     background: #E7E7E7;
     
+`
+
+export const ScrollCategoria = styled.ScrollView`
+    margin-top:6px;
+    height:50px;
+    padding:12px
+`
+export const Areacategoria = styled.View`
+
+    background: red;
+    width: 100px;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px
+
+
 `

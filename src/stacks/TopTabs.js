@@ -8,8 +8,10 @@ import Mercado from '../screens/Home';
 const Tab = createMaterialTopTabNavigator();
 
 export default () => (
-    <Tab.Navigator  screenOptions={{tabBarStyle: { backgroundColor: '#fff' },}} >
+
+    <Tab.Navigator screenOptions={{ tabBarStyle: { backgroundColor: '#fff' }, }} >
         <Tab.Screen name="Restaurante" component={Restaurante} />
         <Tab.Screen name="Mercado" component={Mercado} />
     </Tab.Navigator>
+
 )
