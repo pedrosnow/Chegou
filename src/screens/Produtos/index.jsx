@@ -20,24 +20,15 @@ import {
     AreaTempoPreco,
     Tempo,
     Preco
-
 } from './style';
 
 export default () => {
 
-
-
-
     return (
 
         <Container>
-
-            <StatusBar backgroundColor="#F0F0F0" barStyle="dark-content" > </StatusBar>
-
             <AreaVoltarFavoritoPerfil>
-
                 <View style={{ paddingLeft: 35, paddingRight: 55 }}>
-
                     <AreaVoltarFavoritar>
                         <BtnVotar RotaName='TabNavigation' />
                     </AreaVoltarFavoritar>
@@ -58,7 +49,6 @@ export default () => {
                         </AreaDadosPerfil>
                     </AreaPerfil>
                 </View>
-
                 <DesignerCirculo></DesignerCirculo>
                 <DesignerCirculo1></DesignerCirculo1>
                 <DesignerCirculo2></DesignerCirculo2>

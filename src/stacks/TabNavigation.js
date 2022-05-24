@@ -17,7 +17,7 @@ import Header from '../Components/Header';
 
 const Tab = createBottomTabNavigator();
 
-export default function App() {
+export default () => {
   return (
 
     <Tab.Navigator screenOptions={{ headerShown: false, tabBarShowLabel: false }} >
